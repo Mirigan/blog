@@ -6,6 +6,9 @@ php:
   - 7.3
   - 7.4
 
+before_install:
+  - mysql -e 'CREATE DATABASE blog_test;'
+
 install:
   - composer install
 
